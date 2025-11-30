@@ -68,16 +68,16 @@
     </script>
 
     <script>
-      history.pushState(null, null, null);
+      // history.pushState(null, null, null);
 
-      window.addEventListener("popstate", event => {
-        const hasConfirmed = confirm('ソースコードを破棄して、戻りますか？');
+      // window.addEventListener("popstate", event => {
+      //   const hasConfirmed = confirm('ソースコードを破棄して、戻りますか？');
 
-        if (!hasConfirmed)
-          history.pushState(null, null, null);
-        else
-          location.href = event.target.prevPath;
-      });
+      //   if (!hasConfirmed)
+      //     history.pushState(null, null, null);
+      //   else
+      //     location.href = event.target.prevPath;
+      // });
 
     </script>
 
